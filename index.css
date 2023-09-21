@@ -34,3 +34,8 @@ p {
     align-items: center;
     background-color: rgb(30, 30, 30)
 }
+
+a {
+color: rgb(200, 255, 200)
+font-weight: bolder;
+}
