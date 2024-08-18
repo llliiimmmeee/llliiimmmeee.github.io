@@ -1,4 +1,4 @@
-document.getElementById('audio-player').addEventListener('play', function() {
+document.getElementById('play-btn').addEventListener('click', function() {
     // Show the timeline section
     document.getElementById('timeline-section').style.display = 'block';
     
