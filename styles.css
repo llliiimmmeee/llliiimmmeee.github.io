@@ -52,7 +52,7 @@ body {
 
 .player-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 70%;
     margin-top: 20px;
 }
