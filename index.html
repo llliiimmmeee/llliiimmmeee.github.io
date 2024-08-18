@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Timeline</title>
+    <title>Custom Audio Player</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="audio-section">
-        <audio id="audio-player" controls>
-            <source src="https://files.catbox.moe/ef6mvp.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
+    <div id="audio-section" class="player-container">
+        <div class="player">
+            <div class="disc">
+                <svg viewBox="0 0 100 100" class="disc-svg">
+                    <circle cx="50" cy="50" r="45" stroke="pink" fill="transparent" stroke-width="1"/>
+                    <circle cx="50" cy="50" r="10" stroke="pink" fill="transparent" stroke-width="1"/>
+                    <line x1="50" y1="50" x2="100" y2="50" stroke="pink" stroke-width="1" />
+                </svg>
+            </div>
+            <div class="player-text">
+                <p>MUSICFX RADIO</p>
+                <h2>RAINBOW GRADIENTS</h2>
+            </div>
+            <div class="player-controls">
+                <button id="info-btn">ℹ️</button>
+                <button id="play-btn">▶️</button>
+                <button id="next-btn">⏭️</button>
+            </div>
+        </div>
     </div>
 
     <div id="timeline-section">
-        <h2>My Life Timeline</h2>
-        <div class="timeline">
-            <div class="event">
-                <h3>Year 1</h3>
-                <p>Description of the event...</p>
-            </div>
-            <div class="event">
-                <h3>Year 2</h3>
-                <p>Description of the event...</p>
-            </div>
-            <!-- Add more events as needed -->
-        </div>
+        <!-- Timeline content goes here -->
     </div>
 
     <script src="script.js"></script>
